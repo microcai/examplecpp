@@ -1,0 +1,44 @@
+ODB is an object-relational mapping (ORM) system for C++. It provides
+tools, APIs, and library support that allow you to persist C++ objects
+to a relational database (RDBMS) without having to deal with tables,
+columns, or SQL and without manually writing any of the mapping code.
+For more information see:
+
+http://www.codesynthesis.com/products/odb/
+
+This package contains the pre-compiled binary distribution of the ODB
+compiler. The top-level directory structure of this package is as
+follows:
+
+bin/          ODB compiler binary
+etc/          ODB compiler configuration
+doc/          ODB system documentation
+man/          man pages for the ODB compiler
+<arch>-<os>/  GCC compiler binaries, see manifest inside for details
+
+To install this package simply unpack it into a directory of your choice,
+for example /opt/. You can run the ODB compiler by either using the
+absolute path, for example:
+
+/opt/odb-x.y.z-i686-linux-gnu/bin/odb --version
+
+Or you can add the bin/ directory to the PATH environment variable, for
+example:
+
+export PATH=/opt/odb-x.y.z-i686-linux-gnu/bin:$PATH
+odb --version
+
+If you have commonly-used libraries that are not installed into one of the
+default locations (normally /usr/include and /usr/local/include) and you
+would like to add them to the ODB compiler header search list, then you
+can add their include directories to the etc/odb/default.options file.
+For more information, refer to the instructions at the beginning of this
+file.
+
+Note also that while you can move the ODB compiler directory around, you
+cannot move individual sub-directories or files inside it. For example,
+copying or linking the ODB compiler executable to /usr/local/bin/ will
+not work.
+
+Send questions, bug reports, or any other feedback to the
+odb-users@codesynthesis.com mailing list.

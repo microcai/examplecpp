@@ -1,0 +1,12 @@
+# Default ODB options file. This file is automatically loaded by the ODB
+# compiler and can be used for installation-wide customizations, such as
+# adding an include search path for a commonly used library. For example:
+#
+# -I /opt/boost_1_45_0
+#
+
+# Debian/Ubuntu new multiarch support places certain headers into
+# /usr/include/<arch>. Add that path to the search list but use
+# -idirafter to make sure it is used as a last resort only.
+#
+-idirafter /usr/include/x86_64-linux-gnu

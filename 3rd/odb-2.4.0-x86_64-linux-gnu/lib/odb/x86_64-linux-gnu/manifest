@@ -1,0 +1,14 @@
+This directory contains precompiled binaries for GNU binutils
+and the GCC compiler.
+
+The GNU binutils and GCC distributions are comprised of several
+different packages. Each of the various packages is governed by
+its own individual copyright and licensing terms. Some of those
+packages are licensed by the GNU Public License (GPL) or the GNU
+Lesser General Public License(LGPL), some are licensed in the
+Public Domain and some have their own open-source licenses.
+
+For full source code and licensing details see:
+
+GNU binutils:     http://www.gnu.org/software/binutils/
+GCC:              http://gcc.gnu.org
